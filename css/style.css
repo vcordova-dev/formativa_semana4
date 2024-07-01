@@ -1,0 +1,28 @@
+.sidebar{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active{
+    background-color: rgb(81, 92, 104);
+    color: white;
+}
+
+.sidebar a:hover:not(:active){
+    background-color: rgb(158, 183, 209);
+    color: white;
+}    
+
+.modal {
+    position: absolute;
+    display: none;
+    top: 30%;
+    left: 30%;
+    max-width: 200px;
+    background-color: rgb(252, 244, 220);
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-shadow: 0 25px 25px rgb(0 0 0 / 30%);
+}

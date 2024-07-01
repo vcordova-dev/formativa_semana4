@@ -1,0 +1,74 @@
+<!--Criar um site local com foco no front-end-->
+<!--Pastas e subpastas-->
+<!--Identidade visual-->
+<!--Validação de dados-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/img1.png">
+    <title>Biblioteca Online</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a class="active" href="index.html">Home</a>
+        <a href="news.html">Noticias</a>
+        <a href="contact.html">Contato</a>
+        <a href="about.html">Sobre</a>
+    </div>
+
+    <div class="content">
+        <h2 class="titleTop">Livraria Online</h2>
+        <h3 class="titleBottom">Menu Tradicional</h3>
+
+        <div class="first">
+            <div class="menu">
+                <img class="imgStamp" src="img/img1.png">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('Book1')">    
+            </div>
+
+            <div class="menu">
+                <img class="imgStamp" src="img/img1.png">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('Book2')">    
+            </div>
+            
+            <div class="menu">
+                <img class="imgStamp" src="img/img1.png">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('Book3')">    
+            </div>
+
+            <div class="menu">
+                <img class="imgStamp" src="img/img1.png">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('Book4')">    
+            </div>
+
+            <div class="menu">
+                <img class="imgStamp" src="img/img1.png">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('Book5')">    
+            </div>
+            <div class="menu">
+                <img class="imgStamp" src="img/img1.png">
+                <input class="modalButton" type="button" value="Saiba mais..." onclick="openModal('Book6')">    
+            </div>
+        </div>
+    </div>
+
+    <div id="knowMore" class="modal">
+        <header>
+            <span onclick="closeModal();" class="topright">X</span>
+        </header>
+        <div>
+            <p id="txt1" class="infoh"></p>
+            <p id="txt2" class="info"></p>
+            <p id="txt3" class="info"></p>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
